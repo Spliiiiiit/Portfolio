@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav class="jersey-20-regular">
+            <ul>
+                <li><a href="#accueil">Mon Portfolio</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="accueil" class="scroll-section">
+            <div class="container">
+                <div class="left">
+                    <h1>Brieuc Le Carluer</h1>
+                    <h3>Étudiant ingénieur en Informatique à Polytech</h3>
+                    <p>Actuellement en recherche d'emploi</p>
+                    <a href="Minimalist Modern Professional CV Resume (1).pdf" class="btn-cv">Télécharger mon CV</a>
+                </div>
+                <div class="right">
+                    <img src="Snapchat-1994869039 (1).jpg" alt="Votre portrait" class="portrait">
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+        <section id="presentation" class="scroll-section">
+            <h2>Qui suis-je?</h2>
+        </section>
+        
+        <section id="services" class="scroll-section">
+            <p>Étudiant en 1ère année en école d'ingénieurs à Polytech, je suis passionné par les nouvelles technologies et les langages de programmation. Envisageant une spécialisation dans la programmation de jeux vidéo, et dans l'objectif de compléter ma formation d'ingénieur, je suis actuellement à la recherche d'emploie dans ce secteur.</p>
+            <div class="service-box">
+                <img src="png-transparent-web-development-web-design-software-development-web-developer-web-design-blue-angle-web-design-thumbnail.png" alt="Logo 1">
+                <h3>Développement web</h3>
+                <p>Je suis capable de développer des applications web en utilisant des technologies telles que HTML, CSS, PHP, JavaScript. Je maitrise également l'utilisation de CMS tel que Wordpress, Wix.</p>
+            </div>
+            <div class="service-box">
+                <img src="database-glyph-black-icon-png_291831.jpg" alt="Logo 2">
+                <h3>Base de données</h3>
+                <p>J'ai une expérience avancée en conception et mise en place de bases de données, en utilisant des systèmes tels que Mocodo et Oracle, je sais créer des schémas de base de données efficaces.</p>
+            </div>
+            <div class="service-box">
+                <img src="pngtree-video-editor-icon-design-png-image_4709312.png" alt="Logo 3">
+                <h3>Montage vidéo</h3>
+                <p>Je maitrise l'utilisation de Filmora, un logiciel de montage vidéo professionnel pour la création et l'édition de vidéos de haute qualité. Je sais utiliser ses fonctionnalités avancées, telles que la création d'effets visuels, la synchronisation audio ou encore la correction des couleurs.</p>
+            </div>
+            <div class="service-box">
+                <img src="tableur.png" alt="Logo 4">
+                <h3>Outils</h3>
+                <p>Je maitrise les outils de la suite Microsoft Office tels que Word, Excel, PowerPoint et Outlook. Je maîtrise également les outils logiciels tels que RStudio et Matlab ces outils me permettent de manipuler les données et de créer des graphiques.</p>
+            </div>
+        </section>
+
+
+        <section id="parcours" class="scroll-section">
+            <h2>Parcours</h2>
+            <div class="timeline">
+                <div class="event">
+                    <div class="date">2019</div>
+                    <div class="description">Bénévole dans un Magasin de Fleurs</div>
+                </div>
+                <div class="event">
+                    <div class="date">2023</div>
+                    <div class="description">Baccalauréat Scientifique</div>
+                </div>
+                <div class="event">
+                    <div class="date">2024</div>
+                    <div class="description">Employer à Decathlon</div>
+                </div>
+                <div class="event">
+                    <div class="date">2027</div>
+                    <div class="description">Diplome d'Ingenieur en Informatique</div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+
+        <section id="projets" class="scroll-section">
+            <h2>Projets</h2>
+            <div id="projets-liste">
+                <div class="projet" onclick="afficherDetailProjet('projet1')">
+                    <img src="chemin/vers/image-projet1.jpg" alt="Image Projet 1">
+                    <div class="projet-details">
+                        <div class="projet-content">Voir les détails</div>
+                        <h3>Jeu Vidéo</h3>
+                        <p>Description du projet 1</p>
+                    </div>
+                </div>
+                <div class="projet" onclick="afficherDetailProjet('projet2')">
+                    <img src="chemin/vers/image-projet2.jpg" alt="Image Projet 2">
+                    <div class="projet-details">
+                        <div class="projet-content">Voir les détails</div>
+                        <h3>Montage Vidéo et Photo</h3>
+                        <p>Description du projet 2</p>
+                    </div>
+                </div>
+                <div class="projet" onclick="afficherDetailProjet('projet3')">
+                    <img src="chemin/vers/image-projet3.jpg" alt="Image Projet 3">
+                    <div class="projet-details">
+                        <div class="projet-content">Voir les détails</div>
+                        <h3>Base de Données</h3>
+                        <p>Description du projet 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="detailProjetModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="fermerDetailProjetModal()">&times;</span>
+                <img id="modalLogo" src="" alt="Logo Projet">
+                <h3 id="modalTitre"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+        
+        
+
+        <section id="contact" class="scroll-section">
+            <h2>Contact</h2>
+            <form id="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet :</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn">Envoyer</button>
+            </form>
+            <div id="map"></div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="logo-container">
+            <a href="https://www.instagram.com/brieuc._lc/"><img src="logo1.png" alt="Logo Instagram"></a>
+            <a href="https://www.linkedin.com/checkpoint/lg/login-challenge-submit?lastCv=AgG_s9T_Ix4rIQAAAY7wEEWQg_xF2_xSaCzbkrW8FMi4Ub9Xodeh29Zz1D8&_d=d&vcd=AgEvYzGMOkxhSAAAAY7wEI3gcDYcd29V-QyeEPiHcJGae-b3nbSsbVYNtmsE1mU-NDw458GU2Lw_pWDWeqZH2HjDfzkR7Q&pageInstance=urn%3Ali%3Apage%3Ad_checkpoint_ch_captchaV2Challenge%3BzsDgtxh0SQ%2Bhim%2BTVicYUA%3D%3D&controlId=d_checkpoint_ch_captchaV2Challenge-Submit&ut=0aYMDu5kkkLXc1"><img src="logo2.png" alt="Logo LinkedIn"></a>
+            <a href="https://www.google.com/intl/fr/gmail/about/"><img src="logo3.png" alt="Logo Mail"></a>
+        </div>
+        
+        <p class="location">Rennes, Bretagne, France</p>
+        <p class="copyright">© 2024 Brieuc Le Carluer. Tous droits réservés.</p>
+    </footer>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+

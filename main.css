@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Adjust the font weight as needed */
+  font-style: normal;
+}
+
+
+
+/* Appliquer la police de caractères "Jersey 20" à la navbar */
+.jersey-20-regular {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+/* Police d'écriture noire sur fond blanc */
+body, h1, h2, h3, p, label, input, textarea, button {
+    color: black;
+}
+
+h1 {
+    font-size: 70px; /* Taille de police pour h1 */
+    color: #c62828;
+    font-family: "Jersey 20", sans-serif;
+}
+
+h2 {
+    font-size: 45px; /* Taille de police pour h1 */
+    color: #c62828;
+}
+
+h3 {
+    font-size: 30px; /* Taille de police pour h3 */
+    color: #c62828;
+}
+
+
+
+/* Police d'écriture blanche sur fond rouge */
+header, nav ul li a {
+    color: white;
+}
+
+/* Style de la section contenant la barre de navigation */
+header {
+    background-color: rgba(198, 40, 40, 0.8); /* Couleur de fond avec une opacité de 0.8 */
+    padding: 10px 0; /* Ajout de padding pour réduire la hauteur de la section */
+    position: fixed; /* Fixation de l'en-tête en haut de la page */
+    top: 0; /* Distance par rapport au haut de la page */
+    width: 100%; /* Largeur de l'en-tête à 100% */
+    z-index: 1000; /* Assure que l'en-tête est au-dessus de tout le reste */
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrer horizontalement */
+}
+
+#navbar-section {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    height: 80px; /* Augmentation de la hauteur de la section */
+}
+
+/* Style de la navbar */
+nav {
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Centrage vertical */
+}
+
+/* Style des éléments de la navbar */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none; /* Suppression de la puce de liste */
+    margin: 0; /* Suppression des marges */
+    padding: 0; /* Suppression du padding */
+}
+
+nav ul li {
+    margin-right: 10px; /* Espacement entre les éléments de la barre de navigation */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Supprime l'espacement du dernier élément */
+}
+
+
+/* Ajout de marge à la section accueil pour compenser l'espace occupé par l'en-tête fixe */
+#accueil {
+    margin-top: 60px; /* Marge en haut de la section accueil */
+}
+
+/* Style du titre "Mon nom" dans la section Accueil */
+.accueil-title { /* Taille de police plus grande */
+    color: white; /* Couleur de police */
+    margin-bottom: 20px; /* Espacement en dessous du titre */
+    margin-left: 20px; /* Espace du bord gauche */
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none; /* Suppression du soulignement des liens */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+}
+
+
+/* Effet de survol pour les liens dans la barre de navigation */
+nav ul li a:hover {
+    background-color: white; /* Fond blanc au survol */
+    color: #c62828; /* Changement de couleur du texte en rouge */
+}
+
+
+/* Effet de survol pour le titre "Mon Portfolio" */
+.portfolio-title:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre portée lors du survol */
+}
+
+.portfolio-h2{
+    font-family: "Jersey 20", sans-serif;
+}
+
+/* Effet de survol pour chaque élément de la barre de navigation */
+nav ul li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre portée lors du survol */
+}
+
+/* Styles pour la section "Accueil" */
+#accueil {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Ajustement de la marge en haut de la section */
+}
+
+.left {
+    width: 30%; /* Augmentation de la largeur de la colonne de gauche */
+    text-align: center; /* Centrage du texte */
+    padding-right: 20px;
+    margin-right: 20px;
+    margin-left: 20px; /* Ajout d'une marge à gauche */
+}
+/* Style du bouton CV */
+.btn-cv {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #c62828; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Suppression du soulignement */
+    border-radius: 10px; /* Coins arrondis */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition fluide */
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Adjust the font weight as needed */
+    font-style: normal;
+}
+
+/* Effet de survol pour le bouton CV */
+.btn-cv:hover {
+    background-color: #ffffff;
+    color: #c62828;
+    box-shadow: 0 0 10px #c62828;
+    font-family: "Jersey 20", sans-serif;
+    font-size: 18px;
+}
+
+
+
+.right {
+    width: 60%; /* Réduction de la largeur de la colonne de droite */
+    text-align: center; /* Centrage de l'image */
+}
+
+.portrait {
+    width: 30%; /* Augmentation de la taille de l'image */
+    border: 2px solid #c62828; /* Bordure rouge */
+    height: auto; /* Hauteur automatique pour conserver les proportions de l'image */
+    margin-top: 20px; /* Ajustement de la marge en haut de l'image */
+    border-radius: 5%; /* Ajout de coins arrondis à l'image */
+    
+}
+
+img {
+    width: 80%; /* Ajustez la taille de l'image selon vos besoins */
+    border-radius: 50%; /* Pour arrondir l'image */
+}
+
+/* Style de la section "Qui suis-je?" */
+#presentation {
+    text-align: center;
+    padding: 20px;
+}
+#presentation h2{
+    font-family: "Jersey 20", sans-serif;
+}
+#projets h2{
+    font-family: "Jersey 20", sans-serif;
+}
+
+#services h2{
+    font-family: "Jersey 20", sans-serif;
+}
+
+#parcours h2{
+    font-family: "Jersey 20", sans-serif;
+    text-align: center; /* Centrer le texte horizontalement */
+    margin-bottom: 20px;
+}
+
+
+
+#contact h2{
+    font-family: "Jersey 20", sans-serif;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the flex items horizontally */
+    text-align: center;
+  }
+  #services p {
+    margin-bottom: 20px; /* Add some space below the paragraph */
+  }
+  
+  .service-box {
+    flex: 1 1 300px; /* Adjust the width as needed */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #c62828;
+    text-align: center;
+  }
+  
+  /* Adjustments for the content inside the service boxes */
+  .service-box h3 {
+    margin-bottom: 10px; /* Add some space below the heading */
+  }
+  
+  .service-box p {
+    margin-bottom: 0; /* Remove default margin for paragraphs */
+  }
+  
+#services p {
+    font-size: 18px;
+}
+
+
+.service-box img {
+    width: 100px; /* Ajustez la taille du logo selon vos besoins */
+    margin-bottom: 10px;
+}
+
+.service-box h3 {
+    font-size: 18px;
+}
+/* Ajoutez votre CSS existant ici */
+
+/* Styles pour la section des projets */
+#projets-liste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projet {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    width: 300px; /* Augmentation de la taille des cases de projets */
+    height: 300px; /* Augmentation de la taille des cases de projets */
+    cursor: pointer;
+    background-color: #ffffff; /* Fond blanc par défaut */
+}
+
+.projet img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.projet-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.projet:hover .projet-details {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.projet-content {
+    display: none;
+}
+
+.projet:hover .projet-content {
+    display: block;
+}
+
+.projet:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre portée pour simuler un contour */
+}
+
+.projet:hover .projet-content {
+    opacity: 1;
+}
+
+.projet-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.projet-content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.projet .projet-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Style de la modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+}
+
+/* Contenu de la modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center; /* Centrer le contenu */
+}
+
+/* Bouton pour fermer la modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Fermeture de la modal lorsqu'on clique à l'extérieur */
+.modal-content:focus {
+    outline: none;
+}
+
+/* Centrer le titre */
+#modalTitre {
+    margin-top: 0;
+}
+
+/* Centrer le paragraphe */
+#modalDescription {
+    margin-bottom: 0;
+}
+
+
+
+
+/* Styles pour la frise chronologique */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.event {
+    width: 23%; /* Largeur de chaque événement */
+    position: relative;
+}
+
+.date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline .event .date,
+.timeline .event .description {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Remplacez <weight> par la valeur de poids souhaitée */
+  font-style: normal;
+}
+
+/* Fleche entre les evenements */
+.event:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px; /* Distance de la fleche par rapport au prochain evenement */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #f2f2f2; /* Couleur de fond du prochain evenement */
+    transform: translateY(-50%);
+}
+
+
+
+/* Styles spécifiques à la section "Contact" */
+#contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    max-width: 500px; /* Limite de largeur pour le formulaire */
+    margin: 0 auto; /* Centrage horizontal */
+    text-align: left; /* Alignement du texte à gauche à l'intérieur du formulaire */
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Adjust the font weight as needed */
+    font-style: normal;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px); /* Largeur moins la bordure (3px de chaque côté) et le padding (10px de chaque côté) */
+    padding: 10px;
+    border: 3px solid transparent; /* Bordure transparente */
+    border-radius: 5px;
+    box-sizing: border-box; /* Pour inclure la bordure dans la taille totale */
+    border: 2px solid #c62828;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Adjust the font weight as needed */
+    font-style: normal;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #c62828;
+    box-shadow: 0 0 10px #c62828;
+    font-family: "Jersey 20", sans-serif;
+}
+
+/* Style du footer */
+footer {
+    background-color: #c62828;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Style des logos */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 50px; /* Ajustez la taille des logos selon vos besoins */
+    margin: 0 10px; /* Espacement entre les logos */
+}
+
+/* Style de la localisation */
+.location {
+    font-size: 16px;
+}
+
+/* Style du texte de copiright */
+.copyright {
+    font-size: 14px;
+}
+.scroll-section {
+    opacity: 0; /* Définir l'opacité à 0 par défaut */
+    transform: translateY(50px); /* Déplacer l'élément vers le bas de 50px */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Ajouter une transition */
+}
+
+.scroll-section.visible {
+    opacity: 1; /* Lorsque l'élément est visible, définir l'opacité à 1 */
+    transform: translateY(0); /* Déplacer l'élément à sa position d'origine */
+}
+
+
+
+
+
+
+

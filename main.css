@@ -289,7 +289,7 @@ img {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: 1px solid #c62828;
+    border: 2px solid #c62828;
     border-radius: 10px;
     width: 200px; /* Largeur fixe pour chaque boîte */
     height: 200px; /* Hauteur fixe pour chaque boîte */

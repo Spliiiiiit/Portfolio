@@ -375,13 +375,18 @@ img {
 }
 
 .event {
-    width: 23%; 
+    width: 20%;
     position: relative;
+    text-align: center;
 }
 
 .date {
     font-weight: bold;
     margin-bottom: 10px;
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .description {
@@ -389,29 +394,30 @@ img {
     background-color: #f2f2f2;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .timeline .event .date,
 .timeline .event .description {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400; 
-  font-style: normal;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-
 
 .event:not(:last-child)::after {
     content: "";
     position: absolute;
     top: 50%;
-    right: -10px; 
+    right: -10px;
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid #f2f2f2; 
+    border-left: 10px solid #c62828;
     transform: translateY(-50%);
 }
+
 
 #contact {
     text-align: center;

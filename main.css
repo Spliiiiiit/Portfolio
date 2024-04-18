@@ -4,103 +4,92 @@
 p {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400; /* Adjust the font weight as needed */
+  font-weight: 400; 
   font-style: normal;
 }
 
 
-
-/* Appliquer la police de caractères "Jersey 20" à la navbar */
 .jersey-20-regular {
     font-family: "Jersey 20", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-
-
-
-/* Police d'écriture noire sur fond blanc */
 body, h1, h2, h3, p, label, input, textarea, button {
     color: black;
 }
 
 h1 {
-    font-size: 70px; /* Taille de police pour h1 */
+    font-size: 70px; 
     color: #c62828;
     font-family: "Jersey 20", sans-serif;
 }
 
 h2 {
-    font-size: 45px; /* Taille de police pour h1 */
+    font-size: 45px; 
     color: #c62828;
 }
 
 h3 {
-    font-size: 30px; /* Taille de police pour h3 */
+    font-size: 30px; 
     color: #c62828;
 }
 
-
-
-/* Police d'écriture blanche sur fond rouge */
 header, nav ul li a {
     color: white;
 }
 
-/* Style de la section contenant la barre de navigation */
 header {
-    background-color: rgba(198, 40, 40, 0.8); /* Couleur de fond avec une opacité de 0.8 */
-    padding: 10px 0; /* Ajout de padding pour réduire la hauteur de la section */
-    position: fixed; /* Fixation de l'en-tête en haut de la page */
-    top: 0; /* Distance par rapport au haut de la page */
-    width: 100%; /* Largeur de l'en-tête à 100% */
-    z-index: 1000; /* Assure que l'en-tête est au-dessus de tout le reste */
-    display: flex; /* Utilisation de flexbox */
-    justify-content: center; /* Centrer horizontalement */
+    background-color: rgba(198, 40, 40, 0.8); 
+    padding: 10px 0;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1000; 
+    display: flex; 
+    justify-content: center; 
 }
 
 #navbar-section {
-    display: flex; /* Utilisation de flexbox */
-    justify-content: center; /* Centrage horizontal */
-    align-items: center; /* Centrage vertical */
-    height: 80px; /* Augmentation de la hauteur de la section */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 80px; 
 }
 
-/* Style de la navbar */
+
 nav {
-    display: flex; /* Utilisation de flexbox */
-    align-items: center; /* Centrage vertical */
+    display: flex;
+    align-items: center;
 }
 
-/* Style des éléments de la navbar */
+
 nav ul {
     display: flex;
     align-items: center;
-    list-style-type: none; /* Suppression de la puce de liste */
-    margin: 0; /* Suppression des marges */
-    padding: 0; /* Suppression du padding */
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
 }
 
 nav ul li {
-    margin-right: 10px; /* Espacement entre les éléments de la barre de navigation */
+    margin-right: 10px; 
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Supprime l'espacement du dernier élément */
+    margin-right: 0;
 }
 
 
-/* Ajout de marge à la section accueil pour compenser l'espace occupé par l'en-tête fixe */
+
 #accueil {
-    margin-top: 60px; /* Marge en haut de la section accueil */
+    margin-top: 60px; 
 }
 
-/* Style du titre "Mon nom" dans la section Accueil */
-.accueil-title { /* Taille de police plus grande */
-    color: white; /* Couleur de police */
-    margin-bottom: 20px; /* Espacement en dessous du titre */
-    margin-left: 20px; /* Espace du bord gauche */
+.accueil-title { 
+    color: white; 
+    margin-bottom: 20px; 
+    margin-left: 20px; 
 }
 
 
@@ -108,34 +97,34 @@ nav ul li a {
     display: block;
     padding: 15px 30px;
     color: white;
-    text-decoration: none; /* Suppression du soulignement des liens */
+    text-decoration: none; 
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 10px;
 }
 
 
-/* Effet de survol pour les liens dans la barre de navigation */
+
 nav ul li a:hover {
-    background-color: white; /* Fond blanc au survol */
-    color: #c62828; /* Changement de couleur du texte en rouge */
+    background-color: white;
+    color: #c62828;
 }
 
 
-/* Effet de survol pour le titre "Mon Portfolio" */
+
 .portfolio-title:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre portée lors du survol */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
 .portfolio-h2{
     font-family: "Jersey 20", sans-serif;
 }
 
-/* Effet de survol pour chaque élément de la barre de navigation */
+
 nav ul li:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre portée lors du survol */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Styles pour la section "Accueil" */
+
 #accueil {
     text-align: center;
     padding: 50px 0;
@@ -145,32 +134,32 @@ nav ul li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px; /* Ajustement de la marge en haut de la section */
+    margin-top: 50px; 
 }
 
 .left {
-    width: 30%; /* Augmentation de la largeur de la colonne de gauche */
-    text-align: center; /* Centrage du texte */
+    width: 30%; 
+    text-align: center; 
     padding-right: 20px;
     margin-right: 20px;
-    margin-left: 20px; /* Ajout d'une marge à gauche */
+    margin-left: 20px; 
 }
-/* Style du bouton CV */
+
 .btn-cv {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #c62828; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    text-decoration: none; /* Suppression du soulignement */
-    border-radius: 10px; /* Coins arrondis */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transition fluide */
+    background-color: #c62828; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Adjust the font weight as needed */
+    font-weight: 400; 
     font-style: normal;
 }
 
-/* Effet de survol pour le bouton CV */
+
 .btn-cv:hover {
     background-color: #ffffff;
     color: #c62828;
@@ -182,25 +171,25 @@ nav ul li:hover {
 
 
 .right {
-    width: 60%; /* Réduction de la largeur de la colonne de droite */
-    text-align: center; /* Centrage de l'image */
+    width: 60%; 
+    text-align: center; 
 }
 
 .portrait {
-    width: 30%; /* Augmentation de la taille de l'image */
-    border: 2px solid #c62828; /* Bordure rouge */
-    height: auto; /* Hauteur automatique pour conserver les proportions de l'image */
-    margin-top: 20px; /* Ajustement de la marge en haut de l'image */
-    border-radius: 5%; /* Ajout de coins arrondis à l'image */
+    width: 30%; 
+    border: 2px solid #c62828; 
+    height: auto; 
+    margin-top: 20px; 
+    border-radius: 5%; 
     
 }
 
 img {
-    width: 80%; /* Ajustez la taille de l'image selon vos besoins */
-    border-radius: 50%; /* Pour arrondir l'image */
+    width: 80%; 
+    border-radius: 50%; 
 }
 
-/* Style de la section "Qui suis-je?" */
+
 #presentation {
     text-align: center;
     padding: 20px;
@@ -218,7 +207,7 @@ img {
 
 #parcours h2{
     font-family: "Jersey 20", sans-serif;
-    text-align: center; /* Centrer le texte horizontalement */
+    text-align: center; 
     margin-bottom: 20px;
 }
 
@@ -231,15 +220,15 @@ img {
 #services {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the flex items horizontally */
+    justify-content: center; 
     text-align: center;
   }
   #services p {
-    margin-bottom: 20px; /* Add some space below the paragraph */
+    margin-bottom: 20px; 
   }
   
   .service-box {
-    flex: 1 1 300px; /* Adjust the width as needed */
+    flex: 1 1 300px; 
     margin: 20px;
     padding: 20px;
     background-color: #fff;
@@ -248,13 +237,13 @@ img {
     text-align: center;
   }
   
-  /* Adjustments for the content inside the service boxes */
+ 
   .service-box h3 {
-    margin-bottom: 10px; /* Add some space below the heading */
+    margin-bottom: 10px; 
   }
   
   .service-box p {
-    margin-bottom: 0; /* Remove default margin for paragraphs */
+    margin-bottom: 0; 
   }
   
 #services p {
@@ -263,7 +252,7 @@ img {
 
 
 .service-box img {
-    width: 100px; /* Ajustez la taille du logo selon vos besoins */
+    width: 100px; 
     margin-bottom: 10px;
 }
 
@@ -278,11 +267,10 @@ img {
 #projets-liste {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto; /* Pour centrer les boîtes horizontalement */
-    max-width: 800px; /* Pour aligner les projets côte à côte */
+    margin: 0 auto; 
+    max-width: 800px; 
 }
 
-/* Style des boîtes de projet */
 .projet {
     display: flex;
     flex-direction: column;
@@ -291,46 +279,43 @@ img {
     padding: 20px;
     border: 2px solid #c62828;
     border-radius: 10px;
-    width: 200px; /* Largeur fixe pour chaque boîte */
-    height: 200px; /* Hauteur fixe pour chaque boîte */
+    width: 200px; 
+    height: 200px; 
     position: relative;
     overflow: hidden;
 }
 
-/* Style pour l'image */
+
 .projet img {
     width: auto;
     height: auto;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Pour mettre l'image en arrière-plan */
+    z-index: -1; 
     transition: filter 0.3s ease;
     max-width: 100%;
 }
 
 .projet .projet-details {
     position: relative;
-    z-index: 1; /* Pour placer le texte au-dessus de l'image */
+    z-index: 1; 
     text-align: center;
-    opacity: 0; /* Cacher par défaut */
+    opacity: 0; 
     transition: opacity 0.3s ease;
 }
 .projet:hover .projet-details {
     opacity: 1;
 }
-
-/* Cacher le contenu texte par défaut */
 .projet h3, .projet p {
     display: none;
 }
 
-/* Afficher le contenu texte au survol */
+
 .projet:hover h3, .projet:hover p {
     display: block;
 }
 
-/* Flou de l'image au survol */
 .projet:hover img {
     filter: blur(3px);
 }
@@ -344,10 +329,9 @@ img {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
-/* Contenu de la modal */
 .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
@@ -357,10 +341,10 @@ img {
     max-width: 600px;
     border-radius: 10px;
     position: relative;
-    text-align: center; /* Centrer le contenu */
+    text-align: center; 
 }
 
-/* Bouton pour fermer la modal */
+
 .close {
     position: absolute;
     top: 10px;
@@ -370,26 +354,19 @@ img {
     cursor: pointer;
 }
 
-/* Fermeture de la modal lorsqu'on clique à l'extérieur */
+
 .modal-content:focus {
     outline: none;
 }
 
-/* Centrer le titre */
 #modalTitre {
     margin-top: 0;
 }
 
-/* Centrer le paragraphe */
 #modalDescription {
     margin-bottom: 0;
 }
 
-
-
-
-
-/* Styles pour la frise chronologique */
 .timeline {
     display: flex;
     justify-content: space-between;
@@ -398,7 +375,7 @@ img {
 }
 
 .event {
-    width: 23%; /* Largeur de chaque événement */
+    width: 23%; 
     position: relative;
 }
 
@@ -418,27 +395,24 @@ img {
 .timeline .event .description {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400; /* Remplacez <weight> par la valeur de poids souhaitée */
+  font-weight: 400; 
   font-style: normal;
 }
 
-/* Fleche entre les evenements */
+
 .event:not(:last-child)::after {
     content: "";
     position: absolute;
     top: 50%;
-    right: -10px; /* Distance de la fleche par rapport au prochain evenement */
+    right: -10px; 
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid #f2f2f2; /* Couleur de fond du prochain evenement */
+    border-left: 10px solid #f2f2f2; 
     transform: translateY(-50%);
 }
 
-
-
-/* Styles spécifiques à la section "Contact" */
 #contact {
     text-align: center;
     padding: 50px 0;
@@ -450,9 +424,9 @@ img {
 }
 
 #contact form {
-    max-width: 500px; /* Limite de largeur pour le formulaire */
-    margin: 0 auto; /* Centrage horizontal */
-    text-align: left; /* Alignement du texte à gauche à l'intérieur du formulaire */
+    max-width: 500px; 
+    margin: 0 auto; 
+    text-align: left;
 }
 
 
@@ -463,7 +437,7 @@ img {
 label {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Adjust the font weight as needed */
+    font-weight: 400; 
     font-style: normal;
     display: block;
     margin-bottom: 5px;
@@ -472,11 +446,11 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: calc(100% - 22px); /* Largeur moins la bordure (3px de chaque côté) et le padding (10px de chaque côté) */
+    width: calc(100% - 22px); 
     padding: 10px;
-    border: 3px solid transparent; /* Bordure transparente */
+    border: 3px solid transparent; 
     border-radius: 5px;
-    box-sizing: border-box; /* Pour inclure la bordure dans la taille totale */
+    box-sizing: border-box; 
     border: 2px solid #c62828;
 }
 
@@ -494,7 +468,7 @@ button {
     transition: background-color 0.3s ease;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Adjust the font weight as needed */
+    font-weight: 400; 
     font-style: normal;
 }
 
@@ -505,7 +479,7 @@ button:hover {
     font-family: "Jersey 20", sans-serif;
 }
 
-/* Style du footer */
+
 footer {
     background-color: #c62828;
     text-align: center;
@@ -513,34 +487,34 @@ footer {
     color: white;
 }
 
-/* Style des logos */
+
 .logo-container {
     margin-bottom: 20px;
 }
 
 .logo-container img {
-    width: 50px; /* Ajustez la taille des logos selon vos besoins */
-    margin: 0 10px; /* Espacement entre les logos */
+    width: 50px; 
+    margin: 0 10px; 
 }
 
-/* Style de la localisation */
+
 .location {
     font-size: 16px;
 }
 
-/* Style du texte de copiright */
+
 .copyright {
     font-size: 14px;
 }
 .scroll-section {
-    opacity: 0; /* Définir l'opacité à 0 par défaut */
-    transform: translateY(50px); /* Déplacer l'élément vers le bas de 50px */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Ajouter une transition */
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
 }
 
 .scroll-section.visible {
-    opacity: 1; /* Lorsque l'élément est visible, définir l'opacité à 1 */
-    transform: translateY(0); /* Déplacer l'élément à sa position d'origine */
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 

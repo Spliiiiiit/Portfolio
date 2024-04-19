@@ -500,7 +500,9 @@ footer {
 
 .logo-container img {
     width: 50px; 
-    margin: 0 10px; 
+    margin: 10px;
+    transition-duration: 0.5s; 
+    border-radius: 0px!important;
 }
 
 
@@ -522,10 +524,7 @@ footer {
     opacity: 1; 
     transform: translateY(0); 
 }
-
-
-
-
-
-
-
+.logo-container img:hover{
+    filter: invert(100%);
+    transform: scale(1.2);
+}

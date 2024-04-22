@@ -75,15 +75,15 @@ function afficherDetailProjet(idProjet) {
     if (idProjet === 'projet1') {
         titre.innerText = 'Jeu Vidéo';
         description.innerText = "Dans ce projet de jeu vidéo, j'ai implémenté un système de quadtree en 2D pour une gestion optimisée des objets et des collisions. Les effets de particules ajoutent une dimension visuelle captivante, offrant des explosions éclatantes et des animations lumineuses. Les animations en 2D donnent vie à chaque élément du jeu, offrant des mouvements fluides et expressifs. Ensemble, ces éléments créent une expérience immersive et dynamique, transportant les joueurs dans un univers vibrant d'aventure et de magie.";
-        logo.src = 'chemin/vers/logo-projet1.png';
+        logo.src = 'hazelnut-bastille2.png';
     } else if (idProjet === 'projet2') {
         titre.innerText = 'Montage Vidéo';
         description.innerText = "Dans ce projet de montage vidéo sur Filmora 9, j'ai utilisé des fonctionnalités avancées telles que le suivi de mouvement et les effets de transition personnalisés pour créer une narration visuelle captivante.";
-        logo.src = 'chemin/vers/logo-projet2.png';
+        logo.src = 'imageetson.jpg';
     } else if (idProjet === 'projet3') {
         titre.innerText = 'SQL et Oracle';
         description.innerText = "Dans ce projet de base de données avec Oracle pour des installations électriques, j'ai développé un système de gestion robuste permettant de stocker et d'organiser efficacement des informations vitales telles que les plans, les schémas électriques et les historiques de maintenance.";
-        logo.src = 'chemin/vers/logo-projet3.png';
+        logo.src = 'oracle.png';
     }
 
     // Afficher la modal

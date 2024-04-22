@@ -305,7 +305,7 @@ img {
     transition: opacity 0.3s ease;
 }
 .projet:hover{
-  pointer: cursor;
+  cursor:pointer;
 }
 .projet:hover .projet-details {
     opacity: 1;
@@ -489,6 +489,7 @@ button {
 }
 
 button:hover {
+    cursor:pointer;
     background-color: #ffffff;
     color: #c62828;
     box-shadow: 0 0 10px #c62828;

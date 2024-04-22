@@ -304,6 +304,9 @@ img {
     opacity: 0; 
     transition: opacity 0.3s ease;
 }
+.projet:hover{
+  pointer: cursor;
+}
 .projet:hover .projet-details {
     opacity: 1;
 }

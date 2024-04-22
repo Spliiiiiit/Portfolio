@@ -367,6 +367,13 @@ img {
     margin-bottom: 0;
 }
 
+#modalLogo {
+    width: 75%;
+    height: auto;
+    border-radius:5px;
+    margin-bottom: 20px;
+}
+
 .timeline {
     display: flex;
     justify-content: space-between;

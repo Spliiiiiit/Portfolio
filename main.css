@@ -196,7 +196,8 @@ img {
 
 #presentation {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 #presentation h2{
     font-family: "Jersey 20", sans-serif;

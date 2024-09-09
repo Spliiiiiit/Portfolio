@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-p {
+p {    
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400; 
   font-style: normal;
+}
+
+label.nav-toggle {
+    width:  40px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background: #004aad;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px #004aad, inset 0px -5px 15px #ffffff;
+    cursor: pointer;
 }
 
 
@@ -25,18 +36,18 @@ body, h1, h2, h3, p, label, input, textarea, button {
 
 h1 {
     font-size: 70px; 
-    color: #c62828;
+    color: #004aad;
     font-family: "Jersey 20", sans-serif;
 }
 
 h2 {
     font-size: 45px; 
-    color: #c62828;
+    color: #004aad;
 }
 
 h3 {
     font-size: 30px; 
-    color: #c62828;
+    color: #004aad;
 }
 
 header, nav ul li a {
@@ -44,7 +55,7 @@ header, nav ul li a {
 }
 
 header {
-    background-color: rgba(198, 40, 40, 0.8); 
+    background-color: #004badbb; 
     padding: 10px 0;
     position: fixed;
     top: 0; 
@@ -110,7 +121,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: white;
-    color: #c62828;
+    color: #004aad;
 }
 
 
@@ -143,17 +154,16 @@ nav ul li:hover {
 
 .left {
     width: 30%;
-    
     text-align: center; 
     padding-right: 20px;
-    margin-right: 20px
-    margin-left: 35px; 
+    margin-right: 20px;
+    margin-left: 35px;
 }
 
 .btn-cv {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #c62828; 
+    background-color: #004aad; 
     color: white;
     text-decoration: none; 
     border-radius: 10px;
@@ -166,13 +176,10 @@ nav ul li:hover {
 
 
 .btn-cv:hover {
+    cursor: pointer;
     background-color: #ffffff;
-    color: #c62828;
-    box-shadow: 0 0 10px #c62828;
-    font-family: "Jersey 20", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400; 
-    font-style: normal;
+    color: #004aad;
+    box-shadow: 0 0 10px #004aad;
 }
 
 
@@ -185,7 +192,7 @@ nav ul li:hover {
 
 .portrait {
     width: 30%; 
-    border: 2px solid #c62828; 
+    border: 2px solid #004aad; 
     height: auto; 
     margin-top: 20px; 
     border-radius: 5%; 
@@ -242,7 +249,7 @@ img {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    border: 2px solid #c62828;
+    border: 2px solid #004aad;
     text-align: center;
   }
   
@@ -286,7 +293,7 @@ img {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: 2px solid #c62828;
+    border: 2px solid #004aad;
     border-radius: 10px;
     width: 200px; 
     height: 200px; 
@@ -433,7 +440,7 @@ img {
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid #c62828;
+    border-left: 10px solid #004aad;
     transform: translateY(-50%);
 }
 
@@ -449,7 +456,7 @@ img {
 }
 
 #contact form {
-    max-width: 500px; 
+    max-width: 400px; 
     margin: 0 auto; 
     text-align: left;
 }
@@ -476,7 +483,7 @@ textarea {
     border: 3px solid transparent; 
     border-radius: 5px;
     box-sizing: border-box; 
-    border: 2px solid #c62828;
+    border: 2px solid #004aad;
 }
 
 textarea {
@@ -485,7 +492,7 @@ textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #c62828;
+    background-color: #004aad;
     color: white;
     border: none;
     border-radius: 5px;
@@ -500,13 +507,13 @@ button {
 button:hover {
     cursor: pointer;
     background-color: #ffffff;
-    color: #c62828;
-    box-shadow: 0 0 10px #c62828;
+    color: #004aad;
+    box-shadow: 0 0 10px #004aad;
 }
 
 
 footer {
-    background-color: #c62828;
+    background-color: #004aad;
     text-align: center;
     padding: 20px;
     color: white;

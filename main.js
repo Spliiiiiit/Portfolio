@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sections.forEach(section => {
             const sectionTop = section.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
-            if (sectionTop < windowHeight * 0.75) {
+            if (sectionTop < windowHeight * 0.90) {
                 // Si la section est à moins de 75% de la hauteur de la fenêtre visible, ajoutez la classe 'visible'
                 section.classList.add('visible');
             } else {

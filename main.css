@@ -107,7 +107,6 @@ nav ul li:last-child {
     margin-left: 20px; 
 }
 
-
 nav ul li a {
     display: block;
     padding: 15px 30px;
@@ -153,11 +152,10 @@ nav ul li:hover {
 }
 
 .left {
-    width: 30%;
+    width: 35%;
     text-align: center; 
-    padding-right: 20px;
     margin-right: 20px;
-    margin-left: 35px;
+    margin-left: 70px;
 }
 
 .btn-cv {
@@ -187,23 +185,24 @@ nav ul li:hover {
 .right {
     width: 60%; 
     text-align: center;
-    margin-left: 20px;
+    justify-content: center;
+}
+
+#accueil-img{
+    max-height: 40%;
+    max-width: 40%;
+    height: auto;
+    width: auto;
 }
 
 .portrait {
-    width: 30%; 
+    width: 60%; 
     border: 5px solid #004aad; 
     height: auto; 
     margin-top: 20px; 
     border-radius: 5%; 
     
 }
-
-img {
-    width: 80%; 
-    border-radius: 50%; 
-}
-
 
 #presentation {
     text-align: center;
@@ -504,4 +503,83 @@ footer {
 .logo-container img:hover{
     filter: invert(100%);
     transform: scale(1.2);
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .projet {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projet img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .service-box {
+        flex: 1 1 100%;
+    }
+
+    #projets-liste {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .btn-cv {
+        padding: 10px 20px;
+    }
+
+    .portrait {
+        width: 80%;
+    }
+
+    .service-box {
+        padding: 10px;
+    }
+
+    .timeline {
+        flex-direction: column;
+    }
+
+    .event {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

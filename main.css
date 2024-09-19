@@ -251,6 +251,7 @@ img {
     border-radius: 10px;
     border: 2px solid #004aad;
     text-align: center;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
   }
   
  
@@ -274,6 +275,7 @@ img {
 
 .service-box h3 {
     font-size: 18px;
+    
 }
 
 #projets h2 {
@@ -293,12 +295,15 @@ img {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: 2px solid #004aad;
+    border: 5px solid #004aad;
     border-radius: 10px;
     width: 200px; 
     height: 200px; 
     position: relative;
     overflow: hidden;
+    
+    
+    
 }
 
 
@@ -309,7 +314,8 @@ img {
     top: 0;
     left: 0;
     z-index: -1; 
-    transition: filter 0.3s ease;
+    transition: filter 0.5s ease;
+    transition-duration: 0.5s; 
     max-width: 100%;
 }
 
@@ -318,10 +324,13 @@ img {
     z-index: 1; 
     text-align: center;
     opacity: 0; 
-    transition: opacity 0.3s ease;
+    transition-duration: 1s; 
+    transition: opacity 0.5s ease;
+    transform : scale(1.2)
 }
 .projet:hover{
   cursor: pointer;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
 }
 .projet:hover .projet-details {
     opacity: 1;
@@ -336,7 +345,8 @@ img {
 }
 
 .projet:hover img {
-    filter: blur(3px);
+    filter: blur(7.5px);
+    transform: scale(1.2);
 }
 
 .modal {
@@ -445,74 +455,12 @@ img {
 }
 
 
-#contact {
-    text-align: center;
-    padding: 50px 0;
-}
-
-#contact h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-#contact form {
-    max-width: 400px; 
-    margin: 0 auto; 
-    text-align: left;
-}
 
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400; 
-    font-style: normal;
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: calc(100% - 22px); 
-    padding: 10px;
-    border: 3px solid transparent; 
-    border-radius: 5px;
-    box-sizing: border-box; 
-    border: 2px solid #004aad;
-}
-
-textarea {
-    height: 150px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #004aad;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400; 
-    font-style: normal;
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: #ffffff;
-    color: #004aad;
-    box-shadow: 0 0 10px #004aad;
-}
 
 
 footer {
+    margin-top: 100px;
     background-color: #004aad;
     text-align: center;
     padding: 20px;
@@ -522,6 +470,7 @@ footer {
 
 .logo-container {
     margin-bottom: 20px;
+
 }
 
 .logo-container img {
@@ -529,6 +478,7 @@ footer {
     margin: 10px;
     transition-duration: 0.5s; 
     border-radius: 0px!important;
+    filter: invert(100%) ;
 }
 
 

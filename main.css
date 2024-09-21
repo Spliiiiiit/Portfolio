@@ -477,10 +477,18 @@ footer {
 }
 
 
-.logo-container {
+.logo-container{
     margin-bottom: 20px;
     color: #ffffff;
 
+}
+
+#location {
+    color: #ffffff;
+}
+
+#copyright {
+    color: #ffffff;
 }
 
 .logo-container img {
@@ -489,6 +497,11 @@ footer {
     transition-duration: 0.5s; 
     border-radius: 0px!important;
     filter: invert(100%) ;
+}
+
+.logo-container img:hover{
+    filter: invert(100%);
+    transform: scale(1.2);
 }
 
 
@@ -510,10 +523,7 @@ footer {
     opacity: 1; 
     transform: translateY(0); 
 }
-.logo-container img:hover{
-    filter: invert(100%);
-    transform: scale(1.2);
-}
+
 
 
 /* Responsiveness */
@@ -626,7 +636,7 @@ footer {
     }
 
     header {
-        background-color: #ffffff; 
+        background-color: transparent; 
         padding: 10px 0;
         position: fixed;
         top: 0; 

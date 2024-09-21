@@ -18,21 +18,21 @@ function detecterSectionEntree() {
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav ul li a');
 
-    // Ajoute un gestionnaire d'événements à chaque lien de la barre de navigation
+    // Ajoute un gestionnaire d'événements nav bar
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Empêche le comportement par défaut du lien
-            const targetId = this.getAttribute('href'); // Récupère l'identifiant de la cible
+            event.preventDefault();
+            const targetId = this.getAttribute('href'); // Récupère le href
             const targetElement = document.querySelector(targetId); // Sélectionne l'élément cible
 
             // Récupère la hauteur de la fenêtre et de l'élément cible
             const windowHeight = window.innerHeight;
             const elementHeight = targetElement.offsetHeight;
 
-            // Calcule la position de défilement pour centrer l'élément cible
+            // Calcule la position de défilement
             const scrollPosition = targetElement.offsetTop - (windowHeight - elementHeight) / 2;
 
-            // Défilement fluide jusqu'à l'élément cible
+            // Défilement fluide 
             window.scrollTo({
                 top: scrollPosition,
                 behavior: 'smooth'
@@ -41,20 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-window.addEventListener('scroll', function() {
-    const skillsSection = document.getElementById('skills');
-    const skillBars = document.querySelectorAll('.progress-bar');
-    const sectionPosition = skillsSection.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.3;
-  
-    if (sectionPosition < screenPosition) {
-      skillBars.forEach(skillBar => {
-        const skillLevel = skillBar.getAttribute('data-skill-level');
-        skillBar.style.width = skillLevel;
-      });
-    }
-  });
-  
 
 document.addEventListener('DOMContentLoaded', function() {
     const accueilSection = document.getElementById('accueil');
@@ -69,23 +55,37 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionTop = section.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
             if (sectionTop < windowHeight * 0.90) {
-                // Si la section est à moins de 75% de la hauteur de la fenêtre visible, ajoutez la classe 'visible'
+                
                 section.classList.add('visible');
             } else {
-                // Sinon, retirez la classe 'visible'
+                
                 section.classList.remove('visible');
             }
         });
     });
 });
 
+window.addEventListener('scroll', function() {
+    const skillsSection = document.getElementById('skills');
+    const skillBars = document.querySelectorAll('.progress-bar');
+    const sectionPosition = skillsSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.15;
+  
+    if (sectionPosition < screenPosition) {
+      skillBars.forEach(skillBar => {
+        const skillLevel = skillBar.getAttribute('data-skill-level');
+        skillBar.style.width = skillLevel;
+      });
+    }
+  });
+  
+
 function afficherDetailProjet(idProjet) {
     var modal = document.getElementById('detailProjetModal');
     var titre = document.getElementById('modalTitre');
     var description = document.getElementById('modalDescription');
     var logo = document.getElementById('modalLogo');
-
-    // Définir les détails du projet en fonction de son identifiant
+$
     if (idProjet === 'projet1') {
         titre.innerText = 'Jeu Vidéo';
         description.innerText = "Dans ce projet de jeu vidéo, j'ai implémenté un système de quadtree en 2D pour une gestion optimisée des objets et des collisions. Les effets de particules ajoutent une dimension visuelle captivante, offrant des explosions éclatantes et des animations lumineuses. Les animations en 2D donnent vie à chaque élément du jeu, offrant des mouvements fluides et expressifs. Ensemble, ces éléments créent une expérience immersive et dynamique, transportant les joueurs dans un univers vibrant d'aventure et de magie.";
@@ -100,7 +100,6 @@ function afficherDetailProjet(idProjet) {
         logo.src = 'oracle.png';
     }
 
-    // Afficher la modal
     modal.style.display = 'block';
 }
 
@@ -110,7 +109,7 @@ function fermerDetailProjetModal() {
     modal.style.display = 'none';
 }
 
-// Fermer la modal lorsqu'on clique en dehors de celle-ci
+// Fermer la modal 
 window.onclick = function(event) {
     var modal = document.getElementById('detailProjetModal');
     if (event.target == modal) {
@@ -119,7 +118,7 @@ window.onclick = function(event) {
 }
 
 
-// Script pour ouvrir/fermer le menu burger
+//burger
 document.getElementById("burger-btn").addEventListener("click", function () {
     document.querySelector("header").classList.toggle("show-nav");
 });

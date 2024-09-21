@@ -281,11 +281,8 @@ h2 {
     width: 0;
     padding-right: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: width 1s ease-in-out; /* Animation fluide */
+    transition: width 2s ease-in-out; 
   }
-
-
-  
 
 #projets h2 {
     text-align: center;

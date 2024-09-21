@@ -51,7 +51,7 @@ h3 {
 }
 
 header, nav ul li a {
-    color: white;
+    color: #ffffff;
 }
 
 header {
@@ -189,14 +189,14 @@ nav ul li:hover {
 }
 
 #accueil-img{
-    max-height: 40%;
-    max-width: 40%;
+    max-height: 30%;
+    max-width: 30%;
     height: auto;
     width: auto;
 }
 
 .portrait {
-    width: 60%; 
+    width: 35%; 
     border: 5px solid #004aad; 
     height: auto; 
     margin-top: 20px; 
@@ -232,50 +232,60 @@ nav ul li:hover {
     font-family: "Jersey 20", sans-serif;
 }
 
-#services {
+/* Centrer le titre */
+h2 {
+    text-align: center;
+    color: #004aad; 
+  }
+  
+  #skills {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .skill-bar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    text-align: center;
-  }
-  #services p {
-    margin-bottom: 20px; 
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; 
+    width: 70%; /*taille de la bar si tu veux changer*/
   }
   
-  .service-box {
-    flex: 1 1 300px; 
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: 5px solid #004aad;
-    text-align: center;
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
-  }
-  
- 
-  .service-box h3 {
-    margin-bottom: 10px; 
-  }
-  
-  .service-box p {
-    margin-bottom: 0; 
-  }
-  
-#services p {
-    font-size: 18px;
-}
-
-
-.service-box img {
-    width: 100px; 
-    margin-bottom: 10px;
-}
-
-.service-box h3 {
-    font-size: 18px;
+  .skill-logo {
+    width: 50px;
+    object-fit: cover;
+    margin-right: 10px; 
+    margin: 10px;
+    border-radius: 0px!important;
     
-}
+  }
+  
+  .progress {
+    display: inline-block;
+    width: 70%; 
+    height: 20px; 
+    background-color: white;
+    border: 2px solid #004aad;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #004aad;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    border-radius: 25px;
+    width: 0;
+    padding-right: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: width 1s ease-in-out; /* Animation fluide */
+  }
+
+
+  
 
 #projets h2 {
     text-align: center;
@@ -325,12 +335,18 @@ nav ul li:hover {
     opacity: 0; 
     transition-duration: 1s; 
     transition: opacity 0.5s ease;
-    transform : scale(1.2)
 }
 .projet:hover{
   cursor: pointer;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+    transition-duration: 0.5s; 
 }
+.projet:hover img{
+    filter: blur(5px);
+    
+}
+
 .projet:hover .projet-details {
     opacity: 1;
 }
@@ -343,10 +359,7 @@ nav ul li:hover {
     display: block;
 }
 
-.projet:hover img {
-    filter: blur(7.5px);
-    transform: scale(1.2);
-}
+
 
 .modal {
     display: none;
@@ -426,7 +439,7 @@ nav ul li:hover {
 
 .description {
     padding: 10px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -519,6 +532,7 @@ footer {
 
     nav ul {
         flex-direction: column;
+    
     }
     
     .projet {
@@ -544,8 +558,11 @@ footer {
         flex: 1 1 100%;
     }
 
+
     #projets-liste {
         align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
     }
 }
 
@@ -574,12 +591,60 @@ footer {
         padding: 10px;
     }
 
-    .timeline {
-        flex-direction: column;
-    }
-
     .event {
         width: 100%;
         margin-bottom: 20px;
+    }
+}
+
+
+/* Ajout d'un Burger menu */
+.burger {
+    display: none; 
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: height 0.5s ease;
+    }
+
+    .burger {
+        transition: color 0.3s ease;
+        color: #004aad; /* Couleur initiale du burger */
+        display: block; 
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 20px; 
+        z-index: 10;
+    }
+
+    .show-nav .burger {
+        color: #ffffff; 
+    }
+
+    header {
+        background-color: #ffffff; 
+        padding: 10px 0;
+        position: fixed;
+        top: 0; 
+        width: 100%;
+        z-index: 1000; 
+        display: flex; 
+        justify-content: center; 
+        transition: background-color 0.5s ease; 
+    }
+
+    header.show-nav {
+        background-color: #004badbb; 
+    }
+
+    header.show-nav nav ul {
+        display: flex;
     }
 }

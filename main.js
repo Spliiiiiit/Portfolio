@@ -41,6 +41,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+window.addEventListener('scroll', function() {
+    const skillsSection = document.getElementById('skills');
+    const skillBars = document.querySelectorAll('.progress-bar');
+    const sectionPosition = skillsSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.3;
+  
+    if (sectionPosition < screenPosition) {
+      skillBars.forEach(skillBar => {
+        const skillLevel = skillBar.getAttribute('data-skill-level');
+        skillBar.style.width = skillLevel;
+      });
+    }
+  });
+  
 
 document.addEventListener('DOMContentLoaded', function() {
     const accueilSection = document.getElementById('accueil');
@@ -105,5 +119,7 @@ window.onclick = function(event) {
 }
 
 
-
-
+// Script pour ouvrir/fermer le menu burger
+document.getElementById("burger-btn").addEventListener("click", function () {
+    document.querySelector("header").classList.toggle("show-nav");
+});

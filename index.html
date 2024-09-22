@@ -133,53 +133,63 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-        
-        
 
         <section id="projets" class="scroll-section">
             <h2>Projets</h2>
-            <div id="projets-liste">
-                <div class="projet" onclick="afficherDetailProjet('projet1')">
-                    <img src="assets/jeu.png" alt="Image Projet 1">
-                    <div class="projet-details">
-                        <div class="projet-content"></div>
-                        <h3>Jeu Vidéo</h3>
-                        <p>Voir les détails</p>
-                    </div>
-                </div>
-                <div class="projet" onclick="afficherDetailProjet('projet2')">
-                    <img src="assets/montage.png" alt="Image Projet 2">
-                    <div class="projet-details">
-                        <div class="projet-content"></div>
-                        <h3>Montage Vidéo et Photo</h3>
-                        <p>Voir les détails</p>
-                    </div>
-                </div>
-                <div class="projet" onclick="afficherDetailProjet('projet3')">
-                    <img src="assets/sql.png" alt="Image Projet 3">
-                    <div class="projet-details">
-                        <div class="projet-content"></div>
-                        <h3>Base de Données</h3>
-                        <p>Voir les détails</p>
-                    </div>
-                </div>
-            </div>
+<div class="portfolio-container">
+    <div class="arrow left-arrow" onclick="prevSlide()">&#10094;</div>
+
+    <div class="portfolio-slider">
+        <!-- Projet 1 -->
+        <div class="portfolio-item">
+            <h3>Projet 1</h3>
+            <img src="image1.jpg" alt="Projet 1">
+            <p>Description du projet 1. Ce projet concerne...</p>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="portfolio-item">
+            <h3>Projet 2</h3>
+            <img src="image2.jpg" alt="Projet 2">
+            <p>Description du projet 2. Ce projet traite de...</p>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="portfolio-item">
+            <h3>Projet 3</h3>
+            <img src="image3.jpg" alt="Projet 3">
+            <p>Description du projet 3. Ce projet montre...</p>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="portfolio-item">
+            <h3>Projet 4</h3>
+            <img src="image4.jpg" alt="Projet 4">
+            <p>Description du projet 4. Ce projet montre...</p>
+        </div>
+
+        <!-- Projet 5 -->
+        <div class="portfolio-item">
+            <h3>Projet 5</h3>
+            <img src="image5.jpg" alt="Projet 5">
+            <p>Description du projet 5. Ce projet montre...</p>
+        </div>
+
+        <!-- Projet 6 -->
+        <div class="portfolio-item">
+            <h3>Projet 6</h3>
+            <img src="image6.jpg" alt="Projet 6">
+            <p>Description du projet 6. Ce projet montre...</p>
+        </div>
+    </div>
+
+    <div class="arrow right-arrow" onclick="nextSlide()">&#10095;</div>
+</div>
+
         </section>
         
-        <div id="detailProjetModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="fermerDetailProjetModal()">&times;</span>
-                <img id="modalLogo" src="" alt="">
-                <h3 id="modalTitre"></h3>
-                <p id="modalDescription"></p>
-            </div>
-        </div>
         
-        
-        
+
     </main>
     <footer>
         <div class="logo-container">

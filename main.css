@@ -284,133 +284,102 @@ h2 {
     transition: width 2s ease-in-out; 
   }
 
-#projets h2 {
-    text-align: center;
-}
-
-#projets-liste {
+/* Conteneur principal */
+.portfolio-container {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto; 
-    max-width: 800px; 
-}
-
-.projet {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border: 5px solid #004aad;
-    border-radius: 10px;
-    width: 200px; 
-    height: 200px; 
     position: relative;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: auto;
     overflow: hidden;
-    
-    
-    
+    height: 400px;
+
 }
 
 
-.projet img {
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; 
-    transition: filter 0.25s ease;
-    transition-duration: 0.25s; 
-    max-width: 100%;
-}
-
-.projet .projet-details {
-    position: relative;
-    z-index: 1; 
-    text-align: center;
-    opacity: 0; 
-    transition-duration: 0.25s; 
-    transition: opacity 0.25s ease;
-}
-.projet:hover{
-  cursor: pointer;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-    transition-duration: 0.25s; 
-}
-.projet:hover img{
-    filter: blur(5px);
-    
-}
-
-.projet:hover .projet-details {
-    opacity: 1;
-}
-.projet h3, .projet p {
-    display: none;
-}
-
-
-.projet:hover h3, .projet:hover p {
-    display: block;
-}
-
-
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); 
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
+/* Effet de scale au hover */
+.portfolio-item {
+    background-color: #f0f0f0;
+    border-radius: 15px;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 0 calc(33.33% - 30px);
+    margin: 0 15px;
+    box-sizing: border-box;
+    height: 350px;
+    transition: transform 0.3s ease; 
+}
+
+
+.portfolio-item:hover {
+    transform: scale(1.05); 
+}
+
+
+/* Slider */
+.portfolio-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: fit-content;
+}
+
+
+
+.portfolio-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
-    position: relative;
-    text-align: center; 
 }
 
+a {
+    text-decoration: none;
+}
 
-.close {
+.arrow {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    font-weight: bold;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
 }
 
-
-.modal-content:focus {
-    outline: none;
+.left-arrow {
+    left: 10px;
 }
 
-#modalTitre {
-    margin-top: 0;
+.right-arrow {
+    right: 10px;
 }
 
-#modalDescription {
-    margin-bottom: 0;
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-#modalLogo {
-    width: 75%;
-    height: auto;
-    border-radius:5px;
-    margin-bottom: 20px;
+/* Adaptation pour écrans plus petits */
+@media screen and (max-width: 768px) {
+    .portfolio-item {
+        flex: 1 0 calc(50% - 30px); /* 2 éléments visibles sur écrans plus petits */
+    }
 }
+
+@media screen and (max-width: 480px) {
+    .portfolio-item {
+        flex: 1 0 calc(100% - 30px); /* 1 élément visible sur très petits écrans */
+    }
+}
+
 
 .timeline {
     display: flex;

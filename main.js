@@ -78,44 +78,52 @@ window.addEventListener('scroll', function() {
       });
     }
   });
+
+
+  const portfolioSlider = document.querySelector('.portfolio-slider');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+const totalItems = portfolioItems.length;
+
+let currentIndex = 0;
+const visibleItems = 3; 
+
+function updateSlider() {
+    const itemWidth = portfolioItems[0].offsetWidth + 30; 
+    const offset = -currentIndex * itemWidth;
+    portfolioSlider.style.transform = `translateX(${offset}px)`;
+
+    document.querySelector('.left-arrow').style.display = currentIndex === 0 ? 'none' : 'flex';
+    document.querySelector('.right-arrow').style.display = currentIndex >= totalItems - visibleItems ? 'none' : 'flex';
+}
+
+
+function prevSlide() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+    }
+}
+
+function nextSlide() {
+    if (currentIndex < totalItems - visibleItems) {
+        currentIndex++;
+        updateSlider();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    currentIndex = 0; 
+    updateSlider(); 
+});
+
+document.querySelector('.left-arrow').addEventListener('click', prevSlide);
+document.querySelector('.right-arrow').addEventListener('click', nextSlide);
+
   
 
-function afficherDetailProjet(idProjet) {
-    var modal = document.getElementById('detailProjetModal');
-    var titre = document.getElementById('modalTitre');
-    var description = document.getElementById('modalDescription');
-    var logo = document.getElementById('modalLogo');
-$
-    if (idProjet === 'assets/projet1') {
-        titre.innerText = 'Jeu Vidéo';
-        description.innerText = "Dans ce projet de jeu vidéo, j'ai implémenté un système de quadtree en 2D pour une gestion optimisée des objets et des collisions. Les effets de particules ajoutent une dimension visuelle captivante, offrant des explosions éclatantes et des animations lumineuses. Les animations en 2D donnent vie à chaque élément du jeu, offrant des mouvements fluides et expressifs. Ensemble, ces éléments créent une expérience immersive et dynamique, transportant les joueurs dans un univers vibrant d'aventure et de magie.";
-        logo.src = 'assets/hazelnut-bastille2.png';
-    } else if (idProjet === 'projet2') {
-        titre.innerText = 'Montage Vidéo';
-        description.innerText = "Dans ce projet de montage vidéo sur Filmora 9, j'ai utilisé des fonctionnalités avancées telles que le suivi de mouvement et les effets de transition personnalisés pour créer une narration visuelle captivante.";
-        logo.src = 'assets/imageetson.jpg';
-    } else if (idProjet === 'projet3') {
-        titre.innerText = 'SQL et Oracle';
-        description.innerText = "Dans ce projet de base de données avec Oracle pour des installations électriques, j'ai développé un système de gestion robuste permettant de stocker et d'organiser efficacement des informations vitales telles que les plans, les schémas électriques et les historiques de maintenance.";
-        logo.src = 'oracle.png';
-    }
-
-    modal.style.display = 'block';
-}
 
 
-function fermerDetailProjetModal() {
-    var modal = document.getElementById('detailProjetModal');
-    modal.style.display = 'none';
-}
 
-// Fermer la modal 
-window.onclick = function(event) {
-    var modal = document.getElementById('detailProjetModal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-}
 
 
 //burger

@@ -112,7 +112,7 @@ nav ul li a {
     padding: 15px 30px;
     color: white;
     text-decoration: none; 
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.25s ease, color 0.25s ease;
     border-radius: 10px;
 }
 
@@ -165,7 +165,7 @@ nav ul li:hover {
     color: white;
     text-decoration: none; 
     border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    transition: background-color 0.25s ease, color 0.25s ease; 
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400; 
@@ -320,8 +320,8 @@ h2 {
     top: 0;
     left: 0;
     z-index: -1; 
-    transition: filter 0.5s ease;
-    transition-duration: 0.5s; 
+    transition: filter 0.25s ease;
+    transition-duration: 0.25s; 
     max-width: 100%;
 }
 
@@ -330,14 +330,14 @@ h2 {
     z-index: 1; 
     text-align: center;
     opacity: 0; 
-    transition-duration: 1s; 
-    transition: opacity 0.5s ease;
+    transition-duration: 0.25s; 
+    transition: opacity 0.25s ease;
 }
 .projet:hover{
   cursor: pointer;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
-    transition-duration: 0.5s; 
+    transition-duration: 0.25s; 
 }
 .projet:hover img{
     filter: blur(5px);
@@ -469,6 +469,7 @@ h2 {
 
 
 footer {
+    width: auto;
     margin-top: 100px;
     background-color: #004aad;
     text-align: center;
@@ -485,16 +486,18 @@ footer {
 
 #location {
     color: #ffffff;
+    font-size: 16px;
 }
 
 #copyright {
     color: #ffffff;
+    font-size: 14px;
 }
 
 .logo-container img {
     width: 50px; 
     margin: 10px;
-    transition-duration: 0.5s; 
+    transition-duration: 0.25s; 
     border-radius: 0px!important;
     filter: invert(100%) ;
 }
@@ -504,15 +507,6 @@ footer {
     transform: scale(1.2);
 }
 
-
-.location {
-    font-size: 16px;
-}
-
-
-.copyright {
-    font-size: 14px;
-}
 .scroll-section {
     opacity: 0; 
     transform: translateY(50px); 
@@ -605,7 +599,7 @@ footer {
 }
 
 
-/* Ajout d'un Burger menu */
+/* Ajout d'un Burger pour les telephones */
 .burger {
     display: none; 
 }

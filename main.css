@@ -317,7 +317,8 @@ h2 {
 
 
 .portfolio-item:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #004aad; 
 }
 
 
@@ -349,7 +350,7 @@ h3 {
     top: 50%;
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #004badbb;
     color: white;
     border-radius: 10%;
     display: flex;
@@ -369,7 +370,8 @@ h3 {
 }
 
 .arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #004bad83;
+    transition: 0.25s ease;
 }
 
 /* Adaptation pour écrans plus petits */

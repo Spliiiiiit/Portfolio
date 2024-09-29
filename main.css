@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 p {    
   font-family: "Outfit", sans-serif;
@@ -26,6 +27,9 @@ label.nav-toggle {
     font-style: normal;
 }
 
+
+  
+
 body{
   margin:0px;
 }
@@ -37,7 +41,10 @@ body, h1, h2, h3, p, label, input, textarea, button {
 h1 {
     font-size: 70px; 
     color: #004aad;
-    font-family: "Jersey 20", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 h2 {
